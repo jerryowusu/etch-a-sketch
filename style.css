@@ -16,6 +16,12 @@ body {
 
  }
 
+ h1 {
+     color: white;
+    text-shadow: 2px 1px 2px white;
+
+ }
+
 h1, button, p, footer {
     color: white;
 }
@@ -33,10 +39,17 @@ button {
     gap: 10px;
     width: inherit;
     height: 90px;
-
-
-    
+   
 }
+
+button:focus {
+    outline: none;
+     border: 10px  red;
+    box-shadow: 1px 2px 20px 10px rgba(255, 0, 0, 0.445);
+    transition: 0.5s;
+}
+
+
 
 .warm {
     grid-area: 1 / 1 / 2 / 2
@@ -72,7 +85,9 @@ button {
 .twenty, 
 .thirty,
 .sixteen       {
-    border-radius: 100px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
 }
 
 .warm, 
@@ -83,6 +98,7 @@ button {
 .black, 
 .white  {
     font-size: 1.2rem;
+
 }
 
 p, 
